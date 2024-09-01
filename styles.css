@@ -154,7 +154,7 @@ body {
   font-size: 14px;
 }
 
-@media (max-width: 600px) {
+@media (width < 600px) {
   body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/MEDUSA1.jpeg);
     background-size: cover;
