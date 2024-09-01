@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/MEDUSA.jpeg);
+  background-size: cover;
+  background-position: center;
+  
+  color: #e0e0e0;
+}
+
+.player-container {
+  width: 90%;
+  width: 1200px;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.album-info {
+  width: 50%;
+}
+
+.artist {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 62px;
+  /* width: 80%; */
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+  
+}
+
+.description {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.see-full-album {
+  background-color: rgba(240, 255, 240, 0);
+  color: #e0e0e0;
+  padding: 50px 16px;
+  border: #e0e0e0 1px solid;
+  border-radius: 200px 200px 200px 200px;
+  cursor: pointer;
+}
+
+.album-cover {
+  width: 40%;
+}
+
+.album-cover img {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 320px;
+  border-radius: 8px;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #e0e0e0;
+  width: 50%;
+}
+
+.song-progress {
+  width: 30%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.song-played {
+  width: 0%;
+  height: 100%;
+  background-color: #494949;
+  border-radius: 4px;
+}
+
+.controls {
+  display: flex;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+}
+
+.song-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.song-time {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .album-info {
+    width: 100%;
+  }
+
+  .album-cover {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .song-progress {
+    width: 100%;
+  }
+}
