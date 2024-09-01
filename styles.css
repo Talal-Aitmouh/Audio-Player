@@ -113,8 +113,8 @@ body {
 }
 
 .song-progress {
-  width: 30%;
-  height: 8px;
+  width: 50%;
+  height: 2px;
   background-color: #e0e0e0;
   border-radius: 4px;
   position: relative;
@@ -189,7 +189,10 @@ body {
   .song-title {
     font-size: 26px;
   }
-
+.song-progress{
+  height: 2px;
+  background-color: #e0e0e0;
+}
   .song-time {
     font-size: 18px;
   }
