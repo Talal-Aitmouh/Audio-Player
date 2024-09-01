@@ -154,70 +154,14 @@ body {
   font-size: 14px;
 }
 
-@media (width < 600px) {
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
   body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/MEDUSA1.jpeg);
     background-size: cover;
   }
+
   .player-container {
-    width: 100%;
-    margin-top: 20px;
-    height: auto;
-  }
-
-  .description {
-    font-size: 36px;
-  }
-
-  .see-full-album {
-    padding: 30px 100px;
-    font-size: 36px;
-  }
-
-  .album-cover {
-    width: 100%;
-  }
-
-  .album-cover img {
-    width: 80%;
-  }
-
-  .player-controls {
-    width: 80%;
-  }
-
-  .song-title {
-    font-size: 26px;
-  }
-.song-progress{
-  height: 2px;
-  background-color: #e0e0e0;
-}
-  .song-time {
-    font-size: 18px;
-  }
-
-  .header {
     display: none;
-  }
-
-  .content {
-    flex-direction: column;
-  }
-
-  .album-info {
-    width: 100%;
-  }
-
-  .artist {
-    font-size: 30px;
-  }
-
-  .title {
-    font-size: 130px;
-  }
-
-  .song-progress {
-    width: 100%;
   }
 }
